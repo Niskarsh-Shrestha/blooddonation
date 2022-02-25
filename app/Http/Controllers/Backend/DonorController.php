@@ -15,8 +15,8 @@ class DonorController extends Controller
      */
     public function index()
     {
-        $donor =  Donor::all();
-        return view('backend.donor.index',compact('donor'));
+        $donor = Donor::all();
+        return view('backend.blood-group.index',compact('donor'));
     }
 
     /**
@@ -26,7 +26,7 @@ class DonorController extends Controller
      */
     public function create()
     {
-        //
+        return view('backend.blood-group.create');
     }
 
     /**
@@ -37,7 +37,10 @@ class DonorController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $donor = new Donor();
+        $donor->blood_group = $request->blood_group;
+        $donor->save();
+        return redirect('/blood-group');
 
     }
 
@@ -49,7 +52,8 @@ class DonorController extends Controller
      */
     public function show($id)
     {
-        //
+        $donor = Donor::where('category_id',$id)->get();
+        return view('.backend.donor.show', compact('donor'));
     }
 
     /**

@@ -196,23 +196,18 @@ scratch. This page gets rid of all links and provides the needed markup only.
           <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
           <li class="nav-item menu-open">
-            <a href="#" class="nav-link ">
-              <i class="nav-icon fas fa-"></i>
-              <p>
-                Starter Pages
-                
-              </p>
+            
             </a>
             <li class="nav-item">
-              <a href="/donor" class="nav-link">
-                <i class="nav-icon far fa-"></i>
-                <p>Donor</p>
+              <a href="/blood-group" class="nav-link">
+                <i class="nav-icon far fa-solid fa-dna"></i>
+                <p>Blood-group</p>
               </a>
             </li>
             <li class="nav-item">
-              <a href="#" class="nav-link">
-                <i class="nav-icon far fa-"></i>
-                <p>Receiver</p>
+              <a href="/donor" class="nav-link">
+                <i class="nav-icon far fa-solid fa-inbox-in"></i>
+                <p>Donor</p>
               </a>
             </li>
           </li>
